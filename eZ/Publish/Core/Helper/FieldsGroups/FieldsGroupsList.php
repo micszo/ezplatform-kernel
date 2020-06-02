@@ -6,6 +6,8 @@
  */
 namespace eZ\Publish\Core\Helper\FieldsGroups;
 
+use eZ\Publish\API\Repository\Values\ContentType\FieldDefinition;
+
 /**
  * List of content fields groups.
  *
@@ -28,4 +30,11 @@ interface FieldsGroupsList
      * @return string
      */
     public function getDefaultGroup();
+
+    /**
+     * @param \eZ\Publish\API\Repository\Values\ContentType\FieldDefinition $fieldDefinition
+     *
+     * @return string
+     */
+    public function getFieldGroup(FieldDefinition $fieldDefinition): string;
 }
