@@ -46,7 +46,7 @@ final class ArrayTranslatorFieldsGroupsList implements FieldsGroupsList
     {
         return $this->defaultGroup;
     }
-    
+
     public function getFieldGroup(FieldDefinition $fieldDefinition): string
     {
         if (empty($fieldDefinition->fieldGroup)) {
